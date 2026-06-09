@@ -24,13 +24,13 @@ The goal of this assignment is to practice clean layout design, responsiveness, 
 ---
 
 ## 🌐 Live Website
-🔗 **https://cv-website.vercel.app**  
+🔗 **https://cv-website-azure.vercel.app/**  
 *(Deployed using Vercel)*
 
 ---
 
 ## 📂 GitHub Repository
-🔗 **https://github.com/Muhammad-Abdullah-01/cv-website**
+🔗 **https://github.com/Muhammad-Abdullah-01/CV_website**
 
 ---
 
