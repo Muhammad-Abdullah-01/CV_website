@@ -1,137 +1,190 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Muhammad Abdullah - CV</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Abdullah - CV</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- Theme Toggle -->
+    <input type="checkbox" id="theme-toggle" hidden />
+    <label for="theme-toggle" class="theme-btn" aria-label="Toggle dark/light mode">
+      <span class="mode-icon-dark">🌙</span>
+      <span class="mode-icon-light">☀️</span>
+    </label>
 
-  <!-- dark,light mode -->
-  <input type="checkbox" id="theme-toggle" hidden>
-  <label for="theme-toggle" class="theme-btn">🌙 / ☀️</label>
+    <!-- Main CV Sheet Container -->
+    <div class="cv-sheet">
+      
+      <!-- Header Section -->
+      <div class="cv-header">
+        <div class="header-main-row">
+          <div class="title-meta">
+            <h1>MUHAMMAD ABDULLAH</h1>
+            <p class="subtitle">Full Stack Developer & AI Engineer</p>
+            
+            <div class="meta-row">
+              <span>Lahore, Pakistan</span>
+              <span class="divider">|</span>
+              <span>+92 328 4180034</span>
+              <span class="divider">|</span>
+              <a href="mailto:m.abdullah12589@gmail.com" class="meta-link">m.abdullah12589@gmail.com</a>
+            </div>
+            <div class="meta-row second-meta-row">
+              <a href="https://www.linkedin.com/in/muhammad-abdullah-97a0813aa" target="_blank" rel="noopener noreferrer" class="meta-link">
+                LinkedIn: muhammad-abdullah-97a0813aa
+              </a>
+              <span class="divider">|</span>
+              <a href="https://github.com/Muhammad-Abdullah-01" target="_blank" rel="noopener noreferrer" class="meta-link">
+                GitHub: Muhammad-Abdullah-01
+              </a>
+            </div>
+          </div>
 
-  <!-- main -->
-  <div class="cv-container">
+          <!-- Profile Pic Area -->
+          <div class="header-profile-area">
+            <div class="profile-glow"></div>
+            <img src="abdu.jpg" alt="Muhammad Abdullah" class="header-profile-img" />
+          </div>
+        </div>
 
-    <!-- left -->
-    <div class="left-section">
-
-      <div class="profile">
-        <img src="abdu.jpg" alt="Profile Picture">
-      </div>
-
-      <div class="section">
-        <h3>CONTACT</h3>
-        <p>📞 +123-456-7890</p>
-        <p>✉️ i230770@lhr.nu.edu.pk</p>
-        <p>📍 Sabzazar, Lahore</p>
-      </div>
-
-      <div class="section">
-        <h3>SKILLS</h3>
-        <ul>
-          <li>Project Management</li>
-          <li>Public Relations</li>
-          <li>Teamwork</li>
-          <li>Time Management</li>
-          <li>Leadership</li>
-          <li>Communication</li>
-          <li>Critical Thinking</li>
-        </ul>
-      </div>
-
-      <div class="section">
-        <h3>LANGUAGES</h3>
-        <ul>
-          <li>English (Fluent)</li>
-          <li>French (Basic)</li>
-          <li>Urdu (Fluent)</li>
-        </ul>
-      </div>
-
-    </div>
-
-    <!-- right -->
-    <div class="right-section">
-
-      <!-- header -->
-      <div class="header">
-        <h1>MUHAMMAD ABDULLAH</h1>
-        <h2>AI ENGINEER</h2>
-
-        <!-- download -->
-        <a 
-          href="Muhammad Abdullah - CV.pdf" 
-          download 
-          class="download-btn"
-        >
-          Download CV (PDF)
+        <!-- Download Button -->
+        <a href="Muhammad Abdullah - CV.pdf" download class="download-pdf-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download PDF CV
         </a>
       </div>
 
-      <!-- about -->
-      <div class="content-section">
-        <h3>ABOUT ME</h3>
-        <p>
-          I'm an aspiring IT specialist with a strong background in computer
-          science and programming. Alongside my technical skills, I've taken
-          on leadership and management roles. I enjoy working with people as
-          much as coding and I'm always eager to learn and grow.
+      <!-- Education Section -->
+      <div class="cv-section">
+        <h3>EDUCATION</h3>
+        <div class="section-divider"></div>
+        <div class="cv-item">
+          <div class="item-header">
+            <strong>FAST-NUCES, Lahore</strong>
+            <span>BS Computer Science | 2023 – 2027</span>
+          </div>
+          <p class="coursework">
+            <strong>Relevant Coursework:</strong> Data Structures & Algorithms, Database Systems, Object-Oriented Programming, Computer Organization & Assembly Language (COAL), Software Engineering, Operating Systems, Artificial Intelligence
+          </p>
+        </div>
+        <!-- <div class="cv-item mt-8">
+          <div class="item-header">
+            <strong>Government Science College, Lahore</strong>
+            <span>I.C.S Physics (Intermediate) | 2021 – 2023</span>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- Technical Skills Section -->
+      <div class="cv-section">
+        <h3>TECHNICAL SKILLS</h3>
+        <div class="section-divider"></div>
+        <div class="skills-block">
+          <p><strong>Languages:</strong> C, C++, Python, JavaScript (ES6+), SQL, x86 Assembly (NASM), HTML5, CSS3</p>
+          <p><strong>Frontend:</strong> React.js, TailwindCSS, Framer Motion, Responsive UI Design, DOM Manipulation</p>
+          <p><strong>Backend:</strong> Node.js, Express.js, FastAPI, REST API Design & Development, SMTP Email Server integration</p>
+          <p><strong>AI/ML & NLP:</strong> Large Language Models (LLMs), RAG (Retrieval-Augmented Generation), Prompt Engineering, Semantic Search, TensorFlow, Keras, Scikit-learn, NumPy, Pandas, PyTorch</p>
+          <p><strong>Databases:</strong> MongoDB, MySQL, SQLite, PostgreSQL, Database Design, Normalization, Query Optimization</p>
+          <p><strong>Tools & Systems:</strong> Git, GitHub, Vercel, VS Code, Visual Studio, Postman API Testing, Linux (Ubuntu), DOSBox, RISC-V, Vite, npm</p>
+          <p><strong>Core Concepts:</strong> Object-Oriented Programming (OOP), Data Structures & Algorithms, Software Engineering Principles, Computer Organization & Assembly Language (COAL)</p>
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+      <div class="cv-section">
+        <h3>PROJECTS</h3>
+        <div class="section-divider"></div>
+        
+        <div class="cv-project-item">
+          <div class="project-title-row">
+            <strong>ProductPulse (AI-Powered Demand & Inventory System)</strong>
+          </div>
+          <ul class="project-bullets">
+            <li>Designed and built a full-stack dashboard featuring predictive demand forecasting and real-time inventory management.</li>
+            <li>Implemented predictive analytics for demand intelligence, automating stock replenishment suggestions.</li>
+            <li>Synchronized database updates dynamically across components for consistent inventory tracking.</li>
+            <li class="tech-stack-line"><strong>Tech Stack:</strong> React.js, Node.js, Express.js, MongoDB, TailwindCSS</li>
+          </ul>
+        </div>
+
+        <div class="cv-project-item">
+          <div class="project-title-row">
+            <strong>ScholarAssistant (AI Academic Research Assistant)</strong>
+          </div>
+          <ul class="project-bullets">
+            <li>Developed an AI assistant that performs semantic search queries across arXiv and Semantic Scholar databases.</li>
+            <li>Built a PDF document chat feature implementing Retrieval-Augmented Generation (RAG) using OpenAI API.</li>
+            <li>Implemented citation recommendation and citation mapping to simplify literature reviews.</li>
+            <li>Evaluated search performance using NLP metrics (ROUGE, BLEU) to optimize citation accuracy.</li>
+            <li class="tech-stack-line"><strong>Tech Stack:</strong> Python, FastAPI, Streamlit, OpenAI API, SQLite</li>
+          </ul>
+        </div>
+
+        <div class="cv-project-item">
+          <div class="project-title-row">
+            <strong>TransitFlow (Desktop Bus Ticketing System)</strong>
+          </div>
+          <ul class="project-bullets">
+            <li>Developed a Python desktop bus reservation system featuring an interactive, visual seating chart.</li>
+            <li>Integrated Stripe payment gateway for secure ticket transactions.</li>
+            <li>Configured APScheduler for automated reminders and SMTP server for automated email receipts.</li>
+            <li class="tech-stack-line"><strong>Tech Stack:</strong> Python, Tkinter, SQLite, Stripe API, SMTP</li>
+          </ul>
+        </div>
+
+        <div class="cv-project-item">
+          <div class="project-title-row">
+            <strong>Sudoku Game (Low-Level x86 Assembly)</strong>
+          </div>
+          <ul class="project-bullets">
+            <li>Developed a fully playable Sudoku game in x86 16-bit Assembly running in DOSBox.</li>
+            <li>Implemented direct video memory rendering and custom keyboard input handling for grid navigation.</li>
+            <li>Configured hardware timer interrupts for timer tracking and custom PC speaker sound for audio alerts.</li>
+            <li class="tech-stack-line"><strong>Tech Stack:</strong> x86 Assembly, MASM, DOSBox</li>
+          </ul>
+        </div>
+
+        <div class="cv-project-item">
+          <div class="project-title-row">
+            <strong>Klondike Solitaire Game (C++ Custom Implementation)</strong>
+          </div>
+          <ul class="project-bullets">
+            <li>Implemented a complete console-based Solitaire game using fundamental data structures without Standard Template Libraries (STL).</li>
+            <li>Built custom implementations of stack and doubly linked list classes to handle card state transitions and undo operations.</li>
+            <li>Managed dynamic memory allocation and clean pointer cycles to prevent runtime memory leaks.</li>
+            <li class="tech-stack-line"><strong>Tech Stack:</strong> C++, OOP, Custom Data Structures</li>
+          </ul>
+        </div>
+
+        <div class="cv-project-item">
+          <div class="project-title-row">
+            <strong>Facebook Simulator (C++ OOP & File Handling)</strong>
+          </div>
+          <ul class="project-bullets">
+            <li>Replicated a console-based social networking simulation including profiles, posts, comments, direct messages, and fan pages.</li>
+            <li>Utilized core OOP patterns such as polymorphism, inheritance, dynamic binding, and data encapsulation.</li>
+            <li>Designed a persistent serialization system using custom C++ file streams to save and load user graphs.</li>
+            <li class="tech-stack-line"><strong>Tech Stack:</strong> C++, Object-Oriented Programming, File I/O</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Interests Section -->
+      <div class="cv-section">
+        <h3>INTERESTS</h3>
+        <div class="section-divider"></div>
+        <p class="interests-text">
+          Artificial Intelligence, Large Language Models (LLMs), Web Application Development, System Architecture, Open Source Collaboration, Retro Computing & Low-Level Game Development.
         </p>
       </div>
 
-      <!-- projects -->
-      <div class="content-section">
-        <h3>PROJECTS</h3>
-        <ul>
-          <li><strong>Space Shooter:</strong> Game using SFML & C++</li>
-          <li><strong>Facebook Simulator:</strong> Login, posts, likes</li>
-          <li><strong>Solitaire:</strong> Data structures based</li>
-          <li><strong>Sudoku:</strong> Assembly (COAL)</li>
-          <li><strong>Restaurant Management System:</strong> DBMS</li>
-          <li><strong>AI Chatbot:</strong> PDF-based QA bot</li>
-        </ul>
-      </div>
-
-      <!-- education -->
-      <div class="content-section">
-        <h3>EDUCATION</h3>
-        <ul class="education-list">
-          <li>
-            <strong>I.C.S Physics</strong><br>
-            Science College<br>
-            2021 – 2023
-          </li>
-          <li>
-            <strong>BS Computer Science</strong><br>
-            FAST-NUCES Lahore<br>
-            2023 – Present
-          </li>
-        </ul>
-      </div>
-
-      <!-- contact form -->
-      <div class="content-section">
-        <h3>CONTACT ME</h3>
-        <form class="contact-form">
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-          <textarea placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-
-      <!-- footer -->
-      <footer>
-        <p>© 2026 Muhammad Abdullah</p>
-      </footer>
-
     </div>
-  </div>
-
-</body>
+  </body>
 </html>
-
